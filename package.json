@@ -1,6 +1,6 @@
 {
   "name": "mobiletto-orm-scan-typedef",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Mobiletto-orm typedefs and constants for mobiletto-orm-scan",
   "keywords": [
@@ -51,6 +51,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "mobiletto-orm-typedef": "^2.3.30"
+    "mobiletto-orm-typedef": "^2.3.31"
   }
 }
