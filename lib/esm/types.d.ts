@@ -15,8 +15,7 @@ export type MobilettoScan = {
     name: string;
     interval?: number;
     delay?: number;
-    scan?: MobilettoScanData;
-    history?: MobilettoScanData[];
+    data?: MobilettoScanData;
 };
 export type MobilettoScanStatus = "pending" | "started" | "finished";
 export declare const MobilettoScanObjectTypeDefConfig: MobilettoOrmTypeDefConfig;
