@@ -13,7 +13,6 @@ export type MobilettoScanData = {
 };
 export type MobilettoScan = {
     name: string;
-    interval?: number;
     delay?: number;
     data?: MobilettoScanData;
 };
