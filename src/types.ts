@@ -40,6 +40,8 @@ export const MobilettoScanObjectTypeDefConfig: MobilettoOrmTypeDefConfig = {
     },
 };
 
+export const MobilettoScanObjectTypeDef = new MobilettoOrmTypeDef(MobilettoScanLockTypeDefConfig);
+
 export type MobilettoClock = {
     now: () => number;
 };

@@ -20,6 +20,7 @@ export type MobilettoScan = {
 };
 export type MobilettoScanStatus = "pending" | "started" | "finished";
 export declare const MobilettoScanObjectTypeDefConfig: MobilettoOrmTypeDefConfig;
+export declare const MobilettoScanObjectTypeDef: MobilettoOrmTypeDef;
 export type MobilettoClock = {
     now: () => number;
 };
