@@ -17,6 +17,7 @@ export type MobilettoScan = {
     data?: MobilettoScanData;
     success?: () => unknown;
     error?: (e: Error | unknown) => unknown;
+    done?: () => unknown;
 };
 export type MobilettoScanStatus = "pending" | "started" | "finished";
 export declare const MobilettoScanObjectTypeDefConfig: MobilettoOrmTypeDefConfig;
