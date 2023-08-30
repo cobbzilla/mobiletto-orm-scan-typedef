@@ -33,7 +33,7 @@ export type MobilettoScanStatus = "pending" | "started" | "finished";
 
 export const MobilettoScanObjectTypeDefConfig: MobilettoOrmTypeDefConfig = {
     fields: {
-        status: { index: true, values: ["pending", "started", "finished"], default: "pending" },
+        status: { index: true, values: ["pending", "started", "finished"], default: "pending", control: "label" },
         owner: { required: false, type: "string", control: "label" },
         started: { required: false, type: "number", render: "datetime", control: "label" },
         finished: { required: false, type: "number", render: "datetime", control: "label" },
