@@ -1,6 +1,6 @@
 {
   "name": "mobiletto-orm-scan-typedef",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "type": "module",
   "description": "Mobiletto-orm typedefs and constants for mobiletto-orm-scan",
   "keywords": [

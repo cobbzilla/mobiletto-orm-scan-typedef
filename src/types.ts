@@ -3,8 +3,15 @@ import { MobilettoOrmTypeDef, MobilettoOrmTypeDefConfig } from "mobiletto-orm-ty
 export const MobilettoScanLockTypeDefConfig: MobilettoOrmTypeDefConfig = {
     typeName: "scanLock",
     fields: {
-        lock: { primary: true, type: "string" },
-        owner: { index: true, type: "string" },
+        lock: {
+            primary: true,
+            type: "string",
+        },
+        owner: {
+            index: true,
+            required: true,
+            type: "string",
+        },
     },
 };
 export const MobilettoScanLockTypeDef = new MobilettoOrmTypeDef(MobilettoScanLockTypeDefConfig);
