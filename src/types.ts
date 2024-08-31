@@ -2,7 +2,7 @@ import { MobilettoOrmObject, MobilettoOrmTypeDef, MobilettoOrmTypeDefConfig } fr
 
 export const MobilettoScanLockTypeDefConfig: MobilettoOrmTypeDefConfig = {
     typeName: "scanLock",
-    primary: "lock",
+    autoId: false,
     fields: {
         lock: {
             primary: true,
