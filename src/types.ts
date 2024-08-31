@@ -6,7 +6,7 @@ export const MobilettoScanLockTypeDefConfig: MobilettoOrmTypeDefConfig = {
     fields: {
         lock: {
             primary: true,
-            indexLevels: 3,
+            indexLevels: 1,
             type: "string",
         },
         owner: {
