@@ -1,4 +1,4 @@
-import { MobilettoOrmTypeDef, MobilettoOrmTypeDefConfig } from "mobiletto-orm-typedef";
+import { MobilettoOrmObject, MobilettoOrmTypeDef, MobilettoOrmTypeDefConfig } from "mobiletto-orm-typedef";
 
 export const MobilettoScanLockTypeDefConfig: MobilettoOrmTypeDefConfig = {
     typeName: "scanLock",
@@ -27,7 +27,8 @@ export type MobilettoScanData = {
     error?: Error | string | object;
 };
 
-export type MobilettoScan = {
+export type MobilettoScan<CALLER extends MobilettoOrmObject> = {
+    caller: CALLER;
     name: string;
     delay?: number;
     data?: MobilettoScanData;
