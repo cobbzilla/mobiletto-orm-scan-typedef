@@ -2,13 +2,16 @@ import { MobilettoOrmObject, MobilettoOrmTypeDef, MobilettoOrmTypeDefConfig } fr
 
 export const MobilettoScanLockTypeDefConfig: MobilettoOrmTypeDefConfig = {
     typeName: "scanLock",
+    primary: "lock",
     fields: {
         lock: {
             primary: true,
+            indexLevels: 3,
             type: "string",
         },
         owner: {
             index: true,
+            indexLevels: 3,
             required: true,
             type: "string",
         },
